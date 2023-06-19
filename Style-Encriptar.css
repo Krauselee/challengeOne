@@ -1,0 +1,561 @@
+body {
+
+    background: #F3F5FC;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    /* width: 1440px;
+    height: 1024px; */
+    /* position: auto;  */
+    /* Light blue/light-blue-100 */
+}
+
+header {
+    width: auto;
+    position: relative;
+}
+
+.logo1 {
+    position: absolute;
+    width: 9%;
+    left: 3%;
+    top: 45px;
+}
+
+.textoaEncriptar {
+
+    position: absolute;
+    width: 40%;
+    height: 48px;
+    left: 17%;
+    top: 17%;
+    background: #F3F5FC;
+    border: none;
+    /*sin borde  */
+    resize: none;
+    /* quitar la opcion de redimensionar el textarea */
+    color: #0A3871;
+    /* Dark blue/dark-blue-300 color letra*/
+
+    /* texto */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+::placeholder {
+    /* ... */
+    color: #0A3871;
+    opacity: 0.8;
+}
+
+.info {
+    position: absolute;
+    width: 17.5%;
+    height: 2%;
+    left: 16%;
+    top: 83%;
+}
+
+.exclamacion {
+    display: inline
+        /* position: absolute; */
+        /* width: 16px;
+        height: 16px;
+        left: 16%;
+        top: 83%; */
+}
+
+.informacion {
+    display: inline;
+    left: 11%;
+
+
+    color: #495057;
+    position: absolute;
+    /* width: 229px;
+    height: 18px;
+    
+    top: 470px; */
+
+    /* width: 14%;
+    height: 2%;
+    left: 17%;
+    top: 83%; */
+
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+
+    opacity: 0.8;
+
+    /* Inside auto layout */
+
+}
+
+.botones {
+
+    position: absolute;
+    width: 47%;
+    height: 7%;
+    left: 17%;
+    top: 87%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4%;
+
+
+
+}
+
+.botonEncriptar {
+
+    /* padding: 24px;
+    width: 328px;
+    height: 67px; */
+
+    /* padding: 4%; */
+    width: 48%;
+    height: 100%;
+
+    border-radius: 24px;
+    background: #0A3871;
+    /* Dark blue/dark-blue-300 */
+
+
+    /* letra */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.botonDesencriptar {
+
+    /* padding: 4%; */
+    width: 48%;
+    height: 100%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    /* Dark blue/dark-blue-300 */
+    border-radius: 24px;
+
+    /* letra */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+}
+
+.imagen {
+    /* width: 400px; para una pantalla de 1440*1024*/
+    /* height: 944px; para una pantalla de 1440*1024*/
+    /* left: 1000px; para una pantalla de 1440*1024*/
+    /* top: 40px;  para una pantalla de 1440*1024*/
+    position: absolute;
+    width: 28%;
+    /* width: calc(400px/1440px); */
+    height: 92%;
+    /*  height: calc(944px/1024px); */
+    left: 69%;
+    /* left: calc(1000px/1440px);  */
+    top: 4%;
+    /* top: calc(40px/1024px);  *
+
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+}
+
+.muneco {
+
+    position: fixed;
+    /* width: 336px;
+height: 304px;
+left: 1032px;
+top: 283px; */
+
+    width: 23%;
+    height: 30%;
+    left: 72%;
+    top: 28%;
+    border: #0A3871;
+
+}
+
+.textoMuneco {
+    position: fixed;
+    /* left: 1000px;
+    top: 587px;
+    width: 336px;
+    height: 58px; */
+
+
+    /* left: 1032px;
+top: 619px;
+width: 336px;
+height: 122px; */
+
+    left: 72%;
+    top: 60%;
+    width: 23%;
+    height: 6%;
+    /* margin: 32px 32px 16px 32px; */
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* or 29px */
+
+    text-align: center;
+
+    /* Gray/gray-500 */
+
+    color: #343A40;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
+.texto2Muneco {
+
+    position: fixed;
+
+    /* margin: 16px 32px 32px 32px;  */
+
+    width: 24%;
+    height: 6%;
+    left: 72%;
+    top: 70%;
+
+    /* width: 23%;
+    height: 48px;
+    left: 1000px;
+    top: 637px; */
+
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+
+}
+
+.textoaDesen {
+
+    position: fixed;
+
+    width: 23%;
+    height: 76%;
+    margin: 2.3%;
+
+    outline: none;
+    border: none;
+    resize: none;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+
+    /* Gray/gray-400 */
+
+    color: #495057;
+
+}
+
+.botonCopiar {
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    margin: 2.3% 2.3% 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+
+    position: fixed;
+    width: 23%;
+    /* height: 6.5%; */
+    left: 69%;
+    top: 83%;
+
+    /* Dark blue/dark-blue-300 */
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+
+
+    background-color: #FFFFFF;
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1025px) and (min-width: 480px) {
+
+    /*RESPONSIVO hacer excepciones, en este caso con la pantalla,el screen */
+    .logo1 {
+        position: absolute;
+        left: 5.2%;
+        top: 73px;
+        background-color: red;
+        width: 12%;
+
+    }
+
+    .textoaEncriptar {
+
+        position: absolute;
+        width: 90%;
+        height: 48px;
+        left: 5.2%;
+        top: 17%;
+
+    }
+
+    .info {
+
+        width: 30%;
+        left: 5.2%;
+        top: 71%;
+    }
+
+    .botones {
+        width: 89.5%;
+        height: 6%;
+        left: 5.2%;
+        top: 74%;
+    }
+
+    .imagen {
+        position: absolute;
+        width: 89.5%;
+        height: 11%;
+        left: 5.2%;
+        top: 85%;
+    }
+
+    .textoMuneco {
+        left: 5.2%;
+        top: 85%;
+        width: 81%;
+        margin: 32px 32px 16px 32px;
+    }
+
+    .texto2Muneco {
+        left: 5.2%;
+        top: 90%;
+        width: 81%;
+        margin: 16px 32px 0px 32px;
+    }
+
+    h1 {
+        display: none
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .textoaDesen {
+
+
+        position: absolute;
+        width: auto;
+        margin: 2%;
+        /* 
+        width: 90%;
+        height: 76%; */
+        /* height: auto; */
+        /* position: unset; */
+
+        /* height: scrollHeight; */
+        /* left: 5.2%;
+        top: 85%; */
+
+        /* outline: none;
+        border-style: double; */
+        /* border: brown; */
+        /* resize: none; */
+    }
+
+    .botonCopiar {
+        width: 85%;
+        height: 6.5%;
+        left: 5%;
+        top: 95%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .logo1 {
+        position: absolute;
+        left: 5.2%;
+        top: 73px;
+        background-color: red;
+        width: 12%;
+
+    }
+
+    .textoaEncriptar {
+
+        position: absolute;
+        width: 90%;
+        height: 48px;
+        left: 5.2%;
+        top: 17%;
+
+    }
+
+    .info {
+
+        width: 30%;
+        left: 5.2%;
+        top: 71%;
+    }
+
+    .botones {
+        width: 89.5%;
+        height: 6%;
+        left: 5.2%;
+        top: 74%;
+    }
+
+    .imagen {
+        position: absolute;
+        width: 89.5%;
+        height: 11%;
+        left: 5.2%;
+        top: 85%;
+    }
+
+    .textoMuneco {
+        left: 5.2%;
+        top: 85%;
+        width: 81%;
+        margin: 32px 32px 16px 32px;
+    }
+
+    .texto2Muneco {
+        left: 5.2%;
+        top: 90%;
+        width: 81%;
+        margin: 16px 32px 0px 32px;
+    }
+
+    h1 {
+        display: none
+    }
+
+    .muneco {
+        display: none;
+    }
+
+    .textoaDesen {
+
+
+        position: absolute;
+        width: auto;
+        margin: 2%;
+        /* 
+        width: 90%;
+        height: 76%; */
+        /* height: auto; */
+        /* position: unset; */
+
+        /* height: scrollHeight; */
+        /* left: 5.2%;
+        top: 85%; */
+
+        /* outline: none;
+        border-style: double; */
+        /* border: brown; */
+        /* resize: none; */
+    }
+
+    .botonCopiar {
+        width: 85%;
+        height: 6.5%;
+        left: 5%;
+        top: 95%;
+    }
+
+    /*RESPONSIVO hacer excepciones, en este caso con la pantalla,el screen */
+    /* h1{
+                text-align: center;
+            }
+            nav {
+                position: static;
+            }
+            
+            .cajaCabecera, .principal, .mapaContenido, .contenidoDiferenciales, .video {
+                width: auto;
+            }
+        
+            .listaDiferenciales, .imagenDiferenciales {
+                width: 100%;*/
+}
